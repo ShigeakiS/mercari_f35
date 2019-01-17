@@ -106,10 +106,10 @@
         %i.fas.fa-lock
         %span あんしん・安全への取り組み
 
-  .item-detail-message
+.item-detail-message
   .message-container
     .message-content
-      / = render 'comment'
+      = render 'comment'
     .message-content
       %p
         相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
@@ -117,38 +117,40 @@
       %button.comment-btn{type: :submit}
         コメントする
 
-    .nav-item-link-prev-next
-      .nav-item-link-prev
-        = link_to items_path, class: "prev-item" do
-          %i.fas.fa-angle-left
-          %span 前の商品
-      .nav-item-link-next
-        = link_to items_path, class: "next-item" do
-          %i.fas.fa-angle-right
-          %span 次の商品
+.nav-item-link-prev-next
+  .nav-item-link-prev
+    = link_to items_path, class: "prev-item" do
+      %i.fas.fa-angle-left
+      %span 前の商品
+  .nav-item-link-next
+    = link_to items_path, class: "next-item" do
+      %i.fas.fa-angle-right
+      %span 次の商品
 
-    .item-social-media-box
-      %ul.social-media-box
-        %li
-          = link_to items_path, class: "item-show-fb" do
-            %i.fab.fa-facebook
-        %li
-          = link_to items_path, class: "item-show-tw" do
-            %i.fab.fa-twitter
-        %li
-          = link_to items_path, class: "item-show-pin" do
-            %i.fab.fa-pinterest
+.item-social-media-box
+  %ul.social-media-box
+    %li
+      = link_to items_path, class: "item-show-fb" do
+        %i.fab.fa-facebook
+    %li
+      = link_to items_path, class: "item-show-tw" do
+        %i.fab.fa-twitter
+    %li
+      = link_to items_path, class: "item-show-pin" do
+        %i.fab.fa-pinterest
 
-    .items-box-container
-      .items-box-container__in-user-profile
-        %h2.item-box-head
-          = link_to "たかしゅうさんのその他の出品", items_path, class: "another-user-items"
-        .item-box-head__content
-          %section.show-items
-
-      .items-box-container__in-brands-item
-        %h2.item-box-head
-          = link_to "ミッシェルクランのニット/セーター その他の商品", items_path, class: "another-brand-items"
-        .item-box-head__content
-          %section.show-items
-
+.items-box-container
+  .items-box-container__in-user-profile
+    %h2.item-box-head
+      = link_to "たかしゅうさんのその他の出品", items_path, class: "another-user-items"
+    .item-box-head__content
+      - 2.times do
+        %section.show-items
+          = render 'index'
+  .items-box-container__in-brands-item
+    %h2.item-box-head
+      = link_to "ミッシェルクランのニット/セーター その他の商品", items_path, class: "another-brand-items"
+    .item-box-head__content
+      - 5.times do
+        %section.show-items
+          = render 'index'
