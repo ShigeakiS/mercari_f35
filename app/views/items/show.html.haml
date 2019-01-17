@@ -21,12 +21,12 @@
     .item-photo
       .owl-carousel
         .owl-stage-outer
-          = image_tag "/nit_1.jpg", alt: "sample", class: "thumbnail"
+          = image_tag "nit_1.jpg", alt: "sample", class: "thumbnail"
         .owl-dots
           .owl-dot
-            = image_tag "/nit_1.jpg", alt: "sample", class: "thumbnail-s"
+            = image_tag "nit_1.jpg", alt: "sample", class: "thumbnail-s"
           .owl-dot
-            = image_tag "/nit_2.jpg", alt: "sample", class: "thumbnail-s"
+            = image_tag "nit_2.jpg", alt: "sample", class: "thumbnail-s"
     %table.item-detail-table
       %tbody
         %tr
@@ -113,7 +113,7 @@
     .message-content
       %p
         相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
-      %textarea.comment-form{name: :"text", type: :"text", value: :""}
+      %textarea.comment-form{value: :""}
       %button.comment-btn{type: :submit}
         コメントする
 
