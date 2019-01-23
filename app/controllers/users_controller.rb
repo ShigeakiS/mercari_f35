@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  def choice
+  def new
 
   end
 

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/logout' => 'users#logout'
 
   resources :users do
-    get :choice, on: :collection
+    get :new, on: :collection
     post :follow, on: :member
   end
 
