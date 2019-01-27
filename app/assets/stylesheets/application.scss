@@ -1,6 +1,9 @@
 @import "config/reset";
 @import "config/colors";
 @import "mixin/basic";
+
+@import "devisepage";
+
 @import "modules/header";
 @import "modules/footer";
 @import "modules/visual";
