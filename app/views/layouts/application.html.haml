@@ -9,10 +9,6 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
-  %body
-    = yield
-
-
     %link{crossorigin: "anonymous", href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css", integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/", rel: "stylesheet"}/
 
     %link{href: :"https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css", rel: "stylesheet"}/
@@ -23,11 +19,6 @@
         $('.slider').bxSlider();
       });
 
-  %body
-
     = render 'shared/header'
-
     = yield
-
     = render 'shared/footer'
-
