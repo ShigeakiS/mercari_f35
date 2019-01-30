@@ -4,6 +4,9 @@ class UsersController < ApplicationController
     render layout: 'layout_content'
   end
 
+  def show
+
+  end
 
   def logout
 
