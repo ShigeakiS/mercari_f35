@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :users do
     get :new, on: :collection
     post :follow, on: :member
+    get :registercard, on: :member
   end
 
   resources :items
