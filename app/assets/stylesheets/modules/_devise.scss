@@ -1,11 +1,5 @@
-.clearfix{
-  clear: both;
-  padding: 0;
-}
-
 .single{
   &-container{
-    padding: 0 0 220px;
     height: 100%;
     img{
       width: 185px;
@@ -19,8 +13,6 @@
     h1{
       margin:40px 0 0;
     }
-  }
-  &-single-main{
   }
   &-footer{
     width: 456px;
@@ -189,17 +181,19 @@
   &-default{
   }
   &-red{
-    background: #ea352d;
-    border: 1px solid #ea352d;
-    color: #fff;
-    margin: 40px 0 0;
-    display: block;
-    width: 100%;
-    line-height: 48px;
-    font-size: 14px;
-    transition: all ease-out .3s;
-    cursor: pointer;
-    text-align: center;
+    &-sign{
+      background: #ea352d;
+      border: 1px solid #ea352d;
+      color: #fff;
+      margin: 40px 0 0;
+      display: block;
+      width: 100%;
+      line-height: 48px;
+      font-size: 14px;
+      transition: all ease-out .3s;
+      cursor: pointer;
+      text-align: center;
+    }
   }
   &-mail{
     position: relative;
@@ -231,6 +225,16 @@
       cursor: pointer;
       text-align: center;
       margin: 16px 0 0;
+      .fa-facebook {
+        color: #fff;
+        background: #385185;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+      }
     }
     &-google{
       margin: 16px 0 0;
@@ -247,17 +251,6 @@
       text-align: center;
     }
   }
-}
-
-.fa-facebook{
-    color: #fff;
-    background: #385185;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
 }
 
 .fa-google-plus-g{

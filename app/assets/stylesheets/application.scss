@@ -1,12 +1,10 @@
 @import "config/reset";
 @import "config/colors";
 @import "mixin/basic";
-
-@import "devisepage";
-
-@import "modules/header";
-@import "modules/footer";
+@import "modules/g-header";
+@import "modules/g-footer";
 @import "modules/visual";
+@import "modules/devise";
 @import "modules/index";
 @import "modules/items-box";
 @import "modules/show";
