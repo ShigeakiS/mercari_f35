@@ -1,10 +1,8 @@
 class UsersController < ApplicationController
+  before_action :redirect_to_new, except: :new
 
   def new
     render layout: 'layout_content'
-  end
-
-  def logout
   end
 
   def show
@@ -12,13 +10,17 @@ class UsersController < ApplicationController
     @nickname = user.nickname
   end
 
+  def logout
+  end
+
   private
-  def redirect_to_choice
+  def redirect_to_new
     user = User.find(show_params[:id])
-    redirect_to :action => "choice" unless user.id == current_user.id
+    redirect_to action: "new" unless user.id == current_user.id
   end
 
   def show_params
     params.permit(:id)
   end
+
 end
