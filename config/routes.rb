@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users do
     get :new, on: :collection
     post :follow, on: :member
-    get :logout, on: :collection
+    get :logout, on: :member
   end
 
   resources :items
