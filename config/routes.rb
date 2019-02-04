@@ -4,12 +4,10 @@ Rails.application.routes.draw do
 
   resources :users do
     get :new, on: :collection
-    post :follow, on: :member
     get :registercard, on: :member
     get :logout, on: :member
   end
 
   resources :items
-
   resources :orders
 end
