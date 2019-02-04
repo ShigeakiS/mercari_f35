@@ -11,6 +11,14 @@
   }
   &-content{
     width: 700px;
+
+//JQueryに必要な記述
+    .tab-content ul{
+      display: none;
+    }
+    .show {
+      display: block !important;
+    }
   }
 }
 
@@ -29,10 +37,10 @@
         background: $white;
         color: $black;
         text-decoration: none;
-        &-active{
-          background: $gray;
-          font-weight: 600;
-        }
+       }
+      .active{
+        background: $gray;
+        font-weight: 600;
       }
     }
   }
@@ -105,7 +113,6 @@
       margin: 0;
     }
   }
-
   &-tabs{
     border: 0;
     background: $gray;
@@ -126,7 +133,7 @@
         text-decoration: none;
       }
     }
-    &-active{
+    .active{
       border-top: 2px solid $red;
       background: $white;
     }
@@ -195,7 +202,7 @@
       background-size:contain;
       text-align: center;
       font-size: 16px;
-      color: $slv;
+      color: $silver;
     }
   }
   &-go-list{
@@ -214,15 +221,11 @@
   }
 }
 
-.tab-content.tab-pane{
-  display: none;
-}
-
 .far.fa-angle-rig{
   position: absolute;
   top: 40%;
   right: 16px;
-  color: $slv;
+  color: $silver;
   &:before{
       font-family: "Font Awesome 5 Free";
       content: '\f105';
