@@ -1,11 +1,5 @@
-.clearfix{
-  clear: both;
-  padding: 0;
-}
-
 .single{
   &-container{
-    padding: 0 0 220px;
     height: 100%;
     img{
       width: 185px;
@@ -231,6 +225,16 @@
       cursor: pointer;
       text-align: center;
       margin: 16px 0 0;
+      .fa-facebook{
+        color: $white;
+        background: #385185;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+      }
     }
     &-google{
       margin: 16px 0 0;
@@ -247,17 +251,6 @@
       text-align: center;
     }
   }
-}
-
-.fa-facebook{
-    color: $white;
-    background: #385185;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
 }
 
 .fa-google-plus-g{
@@ -356,19 +349,13 @@
       background: #ddd;
     }
   }
-
   .now {
     color: $red;
-
-  .active {
-    color: #ea352d;
     font-weight: 600;
-
 
     &:before {
       background: $red;
       box-shadow: 0 1px 1px rgba(0,0,0,0.3);
     }
-  }
   }
 }
