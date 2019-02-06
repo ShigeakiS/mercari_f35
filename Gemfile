@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+gem 'enum_help'
 
 group :production do
   gem 'unicorn'
@@ -51,6 +52,8 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'carrierwave'
+  gem 'mini_magick'
 end
 
 group :development do
