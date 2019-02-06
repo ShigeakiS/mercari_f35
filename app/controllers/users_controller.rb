@@ -13,6 +13,11 @@ class UsersController < ApplicationController
   def logout
   end
 
+  def edit
+    user = User.find(show_params[:id])
+  end
+
+
   def identification
   end
 
