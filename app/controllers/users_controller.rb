@@ -13,6 +13,10 @@ class UsersController < ApplicationController
   def logout
   end
 
+  def identification
+  end
+
+
   private
   def redirect_to_new
     user = User.find(show_params[:id])
