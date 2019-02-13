@@ -40,6 +40,8 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'enum_help'
 
+gem 'recaptcha', require: "recaptcha/rails"
+
 group :production do
   gem 'unicorn'
 end
